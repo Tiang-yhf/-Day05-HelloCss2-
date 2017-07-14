@@ -1,0 +1,51 @@
+CSS样式真复杂
+helloCSS2教了
+一.用css编辑网页文本的常用标签
+文字有关、
+字体，字号，颜色，倾斜
+font-family， font-size， color，font-style:italic
+设置各种线：text-decoration
+段落排版
+首行缩进：text-indent
+多倍行距：line-indent
+
+文字横向间距或者字母横向间距：letter-spacing
+单词横向间距：word-spacing
+文本居中：text-align
+
+二.body的背景设置标签
+background：#fff url（）no-repeat（是否重复平铺，repeat-x/y）
+ -100 -100（或者换成left，right，top，bottom，center中的一个）
+ fixd/scroll（图片固定/图片跟着滑动）
+ 
+ 三盒子模型
+ 最里面的是content文本，content距离本身盒子的距离为padding
+ 本身盒子有个border边界属性，而这个盒子本身距离装它的盒子
+ 叫margin
+ 
+ 四浮动
+ 浮动涉及到了一个叫文档流（就是从上到下的顺序排版）的东西
+ ，文档流又涉及到了脱离文档流，即float属性：left，right等等
+ 
+ 五绝对定位，相对定位，固定定位
+绝对定位， 即：position：absolute left,right,等等
+ 规则：绝对定位相对的距离 是  上一次绝对定位的位置，其中body为第一个
+ （即没有出现绝对定位时，绝对定位 的 距离的是body的距离）
+ <!--设置位置时，相对的是上一层含有绝对定位的属性
+			的父标签，如果没有这种父标签，那么相对body-->
+ 
+ 相对定位，<!--相对定位，是将原本所在位置的元素
+			脱离文档流（就是从上到下），挪到另一个位置
+			但是！原来所占据的位置，依然占着
+			
+固定定位，<!--固定定位
+			通过设置pisition属性为fixed来设置
+			固定定位不会跟着滚动条滚动
+		-->
+ 
+ 
+ 
+ 
+ 
+ 
+

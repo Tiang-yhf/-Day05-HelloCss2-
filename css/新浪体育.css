@@ -1,0 +1,29 @@
+.title{
+	font-size: 45px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.menu{
+	color: firebrick;
+	text-align: center;
+}
+#time{
+	color: darkgrey;
+}
+#input1{
+	color: red;
+}
+#input2{
+	color: limegreen;
+}
+.blue{
+	color: dodgerblue;
+}
+.content1{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	 
+	text-indent: 10%;
+	line-height: 1;
+	letter-spacing: 1;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>搞定绝对定位</title>
+		<!--相对定位，是将原本所在位置的元素
+			脱离文档流（就是从上到下），挪到另一个位置
+			但是！原来所占据的位置，依然占着
+			
+		-->
+	</head>
+
+	<body>
+		<div style="position: relative;
+			left: 300px;
+			width: 500px;
+			height: 100px;
+			top: 200px;
+			background-color: grey;
+			">
+			相对于自己原本所在的位置
+			</div>
+		<div style="background-color: red;">
+			我去，我被原来的div挤下去了（）
+		</div>
+		<div style="position: absolute;
+			left: 10px;top: 10px;
+			background-color: greenyellow;
+			"
+			>我浮起来占到了相对定位的坑 </div>
+ 
+
+	</body>
+
+</html>

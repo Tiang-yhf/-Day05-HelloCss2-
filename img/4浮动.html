@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我会浮动，你怕不怕</title>
+		<!--文档流
+			按照html文档中，从上到下的顺序显示标签
+			脱离文档流
+			从正常的文档流中，浮起来，
+			也就不再符合从上到下的规则了
+			
+		-->
+		<!--三个div标签，通过float：left属性的设置
+			浮动了起来，也就不再是正常的文档流到那一层的内容了
+			这一层就浮动层。
+			而p标签，并没有浮动起来，p标签没有设置float属性，
+			所以p标签还是会按照正常文档流的顺序，从上到下排列，
+			而这个排列，是在浮动层下面进行的，所以会看到三个div
+			标签将p标签盖住的现象
+			
+			虽然会盖住div的背景（底层）但是不会覆盖文本
+		-->
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				float: left;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--标准流，就是想流水一样按顺序来-->
+		<div style="height: 100px;width: 200px;"> 
+		<div style="background-color: red;"></div>
+		<div style="background-color: green;"></div>
+		<div style="background-color: blue;"></div>
+		</div>
+		<div style="height: 100px;"> 
+		<p style="background-color: darkgrey;
+		width: 300px;
+		height: 200px;
+		">我的p标签在哪呢</p>
+		</div>
+	</body>
+</html>

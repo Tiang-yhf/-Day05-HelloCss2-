@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>演示盒子模型</title>
+	</head>
+	<!--盒子模型，1以一个标签的cotent，padding border，margin等属性
+		建立一个模型，该模型可以帮助我们更好的理解标签与标签，标签与其
+		内容之间的关系
+	-->
+
+	<body>
+		<div style="background-color: blue;height: 100px;margin: 20px;
+			color: white;">
+			我是盒子模型的第一个div标签
+			<!--第二个盒子如果样式和第一个盒子设置的一样的话
+				则会出现空间溢出---》只有纵向溢出，横向不会溢出
+				content外面是一个盒子，盒子具有border
+				而这个盒子会被包裹在一个更大的盒子里面
+				这个盒子与这个更大的盒子的边距为margin
+				
+				想span这种内联标签，是不可以设置上下外边距的，也就是margin-top和margin
+				-bottom对其是不起作用的。它们的高度，由内容的高度，与padding-top和
+				padding-bottom和border决定/
+				
+				在div这种块状元素中，给它的子标签span一个padding-top属性，并不会将这个
+				div撑起来，这是因为内联元素（内联块元素）的层级比块状元素层级高。
+				
+				在div这种块状元素中，在其content文字内容后，又写了一个divchild子标签
+				，这个divchild子标签任然会独自占据一行
+				
+			-->
+			<div style="background-color:red;  ;color: white;">
+				我是盒子模型的第二个div标签
+
+			</div>
+		</div>
+		
+		
+		<!--padding指的是内容距离自身盒子的距离
+			比如：恐怖如斯，到上边距的距离是100px
+			“我是内联元素span的让你包裹住了”到span盒子的边距是10px
+			
+		-->
+		<div style="background-color: green;
+		margin: 40px;
+		height: 200px;
+		padding-top: 100px;
+		">
+		恐怖如斯
+		 
+		<span style="background-color: chocolate;
+		padding: 20px; margin-top: 100px; border:1  double #32CD32;
+		">我是内联元素span的让你包裹住了 </span>
+		
+			
+		</div>
+		
+		<!--在span标签中，在其content文字内容后，又写了一个子标签span，
+			给这个内容部的子标签span一个padding属性，子标签span会将外层
+			的父标签span撑开
+			撑开的距离为两者padding之和
+			
+			backgound-img这个属性是在backgournd-colo这个属性上层的
+			
+			margin属性是透明的，看不见的，是在background-color下层的，但是
+			background-color无法影响到margin属性，所以它是透明的。
+			
+			两个div标签，上方的div标签有一个属性margin-bottom:20px
+			下方的div标签有一个熟悉margin-top：40px
+			那么两个div纵向的实际距离为40px。
+			也就是两个margin属性，较大的值起作用
+			
+		-->
+		<!--在span标签中，写一个子标签span-->
+		<span style="background-color: coral;
+			background-image:
+			 url(baidu.jpg);
+			  padding: 20px;
+			  background-repeat:no-repeat ;s">
+			 我是span1<span style="padding:100px;background-color: greenyellow;">
+			 	我又加了个span</span><span>我是span2</span></span>
+		
+	</body>
+
+</html>

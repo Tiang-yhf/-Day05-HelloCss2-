@@ -1,0 +1,19 @@
+p{
+	/*字体，字号，颜色, 字体倾斜*/
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: red;
+	font-style: italic;
+	/*段落排版
+	 首行缩进() 
+	 多倍行距 
+	 文字横向间距或字母横向间距
+	 单词横向间距 
+	 文本居中显示
+	 * */
+	text-indent: 20%;
+	line-height: 8;
+	letter-spacing: 20px;
+	word-spacing: 50px;
+	/*text-align: center;	*/
+}
